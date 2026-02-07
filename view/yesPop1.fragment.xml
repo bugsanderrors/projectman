@@ -12,24 +12,23 @@
             <VBox id="vf3"
                 alignItems="Center"
                 justifyContent="Center"
-                class="sapUiMediumMargin">
-
-                <HBox id="hf3" justifyContent="End" alignItems="Start" width="100%">
-
-                    <Button id="bf3" icon="sap-icon://decline" type="Transparent" press="onCloseYes1" />
-
-                </HBox>
+                class="sapUiLargeMarginTop">
 
                 <Image id="imgf3"
                     src="../images/world.gif"
                     width="250px"
                     densityAware="false"
                     alt="Loading animation"
-                    decorative="true" />
+                    decorative="true" 
+                    class="sapUiSmallMarginBottom"/>
 
-                <HBox id="hf4" justifyContent="End" alignItems="Start" width="100%" />
+                <Text id="tf3" text="I barely know your world, but something in me wants to understand every corner of it.🌏" textAlign="Center" class="sapUiSmallMargin"/>
 
-                <Text id="tf3" text="I barely know your world, but something in me wants to understand every corner of it.🌏" textAlign="Center" />
+                <HBox id="hfy3" justifyContent="Center" alignItems="Center" width="100%">
+
+                    <Button id="bfy3" icon="sap-icon://arrow-right" type="Transparent" press="onCloseYes1" />
+
+                </HBox>
 
             </VBox>
         </content>

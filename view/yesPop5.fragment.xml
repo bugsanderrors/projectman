@@ -12,24 +12,26 @@
             <VBox id="vf7"
                 alignItems="Center"
                 justifyContent="Center"
-                class="sapUiMediumMargin">
-
-                <HBox id="hf12" justifyContent="End" alignItems="Start" width="100%">
-
-                    <Button id="bf7" icon="sap-icon://decline" type="Transparent" press="onCloseYes5" />
-
-                </HBox>
+                class="sapUiLargeMarginTop">
 
                 <Image id="imgf7"
                     src="../images/complete.gif"
                     width="250px"
                     densityAware="false"
                     alt="Loading animation"
-                    decorative="true" />
+                    decorative="true" 
+                    class="sapUiSmallMarginBottom"/>
 
                 <HBox id="hf11" justifyContent="End" alignItems="Start" width="100%" />
 
-                <Text id="tf7" text="You complete me.☀️🌑" textAlign="Center" />
+                <Text id="tf7" text="You complete me.☀️🌑" textAlign="Center" class="sapUiSmallMarginBottom"/>
+
+                
+                <HBox id="hf12" justifyContent="Center" alignItems="Center" width="100%">
+
+                    <Button id="bf7" icon="sap-icon://arrow-right" type="Transparent" press="onCloseYes5" />
+
+                </HBox>
 
             </VBox>
         </content>

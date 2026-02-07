@@ -12,24 +12,23 @@
             <VBox id="vf5"
                 alignItems="Center"
                 justifyContent="Center"
-                class="sapUiMediumMargin">
-
-                <HBox id="hf7" justifyContent="End" alignItems="Start" width="100%">
-
-                    <Button id="bf5" icon="sap-icon://decline" type="Transparent" press="onCloseYes3" />
-
-                </HBox>
+                class="sapUiLargeMarginTop">
 
                 <Image id="imgf5"
                     src="../images/age.gif"
                     width="250px"
                     densityAware="false"
                     alt="Loading animation"
-                    decorative="true" />
+                    decorative="true" 
+                    class="sapUiSmallMarginBottom"/>
 
-                <HBox id="hf8" justifyContent="End" alignItems="Start" width="100%" />
+                <Text id="tf5" text="I will choose to love you at every age, in every universe and every lifetime.💫" textAlign="Center" class="sapUiSmallMargin"/>
 
-                <Text id="tf5" text="I will choose to love you at every age, in every universe and every lifetime.💫" textAlign="Center" />
+                <HBox id="hf7" justifyContent="Center" alignItems="Center" width="100%">
+
+                    <Button id="bf5" icon="sap-icon://arrow-right" type="Transparent" press="onCloseYes3" />
+
+                </HBox>
 
             </VBox>
         </content>

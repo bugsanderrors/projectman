@@ -6,7 +6,7 @@
         id="yesPop"
         showHeader="false"
         contentWidth="300px"
-        contentHeight="400px">
+        contentHeight="450px">
 
         <content>
             <VBox id="vf1"
@@ -14,20 +14,21 @@
                 justifyContent="Center"
                 class="sapUiMediumMargin">
 
-                <HBox id="hf1" justifyContent="End" alignItems="Start" width="100%">
-
-                    <Button id="bf1" icon="sap-icon://decline" type="Transparent" press="onCloseYes" />
-
-                </HBox>
-
                 <Image id="imgf1"
                     src="../images/ily.gif"
                     width="250px"
                     densityAware="false"
                     alt="Loading animation"
-                    decorative="true" />
+                    decorative="true" 
+                    class="sapUiSmallMarginBottom"/>
 
-                <Text id="tf1" text="Happy Valentine's Day Manisha❤️" />
+                <Text id="tf1" text="Happy Valentine's Day Manisha❤️" textAlign="Center" class="sapUiSmallMarginBottom"/>
+
+                <HBox id="hf1" justifyContent="Center" alignItems="Center" width="100%">
+
+                    <Button id="bf1" icon="sap-icon://heart-2" type="Transparent" press="onCloseYes" />
+
+                </HBox>
 
             </VBox>
         </content>

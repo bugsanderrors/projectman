@@ -72,6 +72,11 @@ sap.ui.define([
 
         },
 
+        onYes1 : function () {
+            this.byId("noPop").close();
+            this._openDialog("noPop2");
+        },
+
         onNo: function () {
 
             this._openDialog("noPop");
@@ -110,7 +115,7 @@ sap.ui.define([
 
         onCloseYes3 : function () {
             this.byId("yesPop3").close();
-            this._openDialog("yesPop4");
+            this._openDialog("yesPop5");
         },
 
         onCloseYes4 : function () {
@@ -125,6 +130,10 @@ sap.ui.define([
 
         onCloseNo : function () {
             this.byId("noPop").close();
+        },
+
+        onCloseNo2 : function () {
+            this.byId("noPop2").close();
         },
 
         onDialogAfterOpen: function () {

@@ -14,7 +14,7 @@
                 justifyContent="Center"
                 class="sapUiMediumMargin">
 
-                <HBox id="hf2" justifyContent="End" alignItems="Start" width="100%">
+                <HBox id="hf2" justifyContent="End" alignItems="Start" width="100%" class="sapUiMediumMarginBottom">
 
                     <Button id="bf2" icon="sap-icon://decline" type="Transparent" press="onCloseNo" />
 
@@ -25,9 +25,28 @@
                     width="250px"
                     densityAware="false"
                     alt="Loading animation"
-                    decorative="true" />
+                    decorative="true" 
+                    class="sapUiMediumMarginBottom"/>
 
                 <Text id="tf2" text="Are you sure?🥹" />
+
+                <HBox id="hbox3"
+                        justifyContent="End"
+                        alignItems="Center">
+
+                    <Button id="button_yes_page_no"
+                        text="Yes"
+                        
+                        press="onYes1" />
+
+                    <HBox id="hbox4" width="1rem" />
+
+                    <Button id="try_again"
+                        text="Try Again!"
+                        
+                        press="onCloseNo" />
+
+                </HBox>
 
             </VBox>
         </content>
