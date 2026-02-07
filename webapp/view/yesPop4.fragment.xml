@@ -1,0 +1,39 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="yesPop4"
+        showHeader="false"
+        contentWidth="300px"
+        contentHeight="450px">
+
+        <content>
+            <VBox id="vf6"
+                alignItems="Center"
+                justifyContent="Center"
+                class="sapUiMediumMargin">
+
+                <HBox id="hf9" justifyContent="End" alignItems="Start" width="100%">
+
+                    <Button id="bf6" icon="sap-icon://decline" type="Transparent" press="onCloseYes4" />
+
+                </HBox>
+
+                <Image id="imgf6"
+                    src="../images/age.gif"
+                    width="250px"
+                    densityAware="false"
+                    alt="Loading animation"
+                    decorative="true" />
+
+                <HBox id="hf10" justifyContent="End" alignItems="Start" width="100%" />
+
+                <Text id="tf6" text="No one will ever love you the way I do. That's something I am certain of." textAlign="Center" />
+
+            </VBox>
+        </content>
+
+    </Dialog>
+
+</core:FragmentDefinition>

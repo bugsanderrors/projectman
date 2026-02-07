@@ -1,0 +1,74 @@
+<mvc:View controllerName="manishant.projectman.controller.main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:f="sap.f">
+    <Page id="page" >
+        <content>
+        <VBox id="box1" width="100%" height="100%" justifyContent="Center" alignItems="Center">
+
+            <f:Card id="card1" width="700px" height="700px">
+                <f:header>
+                    
+                </f:header>
+
+                <f:content>
+                    <VBox id="box2" class="sapUiSmallMargin" width="100%" height="100%" alignItems="Center">
+                        <Text id="t1" text="Will you be my Valentine?"  textAlign="Center" class="myStyle"/>
+
+                        <VBox id="blank_box" height="2rem" />
+
+                        <VBox id="blank_box2" height="2rem" />
+
+                        <Carousel
+                            id="imageCarousel"
+                            height="400px"
+                            width="400px"
+                            loop="true"
+                            showPageIndicator="true">
+
+                            <Image id="car_img1"
+                                src="../images/image1.jpg"
+                                width="100%"
+                                densityAware="false" />
+
+                            <Image id="car_img2"
+                                src="../images/image2.png"
+                                width="100%"
+                                densityAware="false" />
+
+                            <Image id="car_img3"
+                                src="../images/image3.png"
+                                width="100%"
+                                densityAware="false" />
+
+                        </Carousel>
+
+
+                        <HBox id="hbox1"
+                              justifyContent="End"
+                              alignItems="Center">
+
+                            <Button id="button_yes"
+                                text="Yes"
+                                class="bigButtonYes"
+                                press="onYes" />
+
+                            <HBox id="hbox2" width="2rem" />
+
+                            <Button id="button_no"
+                                text="No"
+                                class="bigButtonNo"
+                                press="onNo" />
+
+                        </HBox>
+                    </VBox>
+
+                    
+
+                </f:content>
+            </f:Card>
+
+            </VBox>
+
+        </content>
+    </Page>
+</mvc:View>

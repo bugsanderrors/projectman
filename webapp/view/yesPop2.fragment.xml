@@ -1,0 +1,40 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="yesPop2"
+        showHeader="false"
+        contentWidth="300px"
+        contentHeight="450px"
+        >
+
+        <content>
+            <VBox id="vf4"
+                alignItems="Center"
+                justifyContent="Center"
+                class="sapUiMediumMargin">
+
+                <HBox id="hf5" justifyContent="End" alignItems="Start" width="100%">
+
+                    <Button id="bf4" icon="sap-icon://decline" type="Transparent" press="onCloseYes2" />
+
+                </HBox>
+
+                <Image id="imgf4"
+                    src="../images/home.gif"
+                    width="250px"
+                    densityAware="false"
+                    alt="Loading animation"
+                    decorative="true" />
+
+                <HBox id="hf6" justifyContent="End" alignItems="Start" width="100%" />
+
+                <Text id="tf4" text="Every bit of you has a home in this heart of mine.🏡" textAlign="Center" />
+
+            </VBox>
+        </content>
+
+    </Dialog>
+
+</core:FragmentDefinition>

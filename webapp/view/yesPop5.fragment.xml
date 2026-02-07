@@ -1,0 +1,39 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="yesPop5"
+        showHeader="false"
+        contentWidth="300px"
+        contentHeight="450px">
+
+        <content>
+            <VBox id="vf7"
+                alignItems="Center"
+                justifyContent="Center"
+                class="sapUiMediumMargin">
+
+                <HBox id="hf12" justifyContent="End" alignItems="Start" width="100%">
+
+                    <Button id="bf7" icon="sap-icon://decline" type="Transparent" press="onCloseYes5" />
+
+                </HBox>
+
+                <Image id="imgf7"
+                    src="../images/complete.gif"
+                    width="250px"
+                    densityAware="false"
+                    alt="Loading animation"
+                    decorative="true" />
+
+                <HBox id="hf11" justifyContent="End" alignItems="Start" width="100%" />
+
+                <Text id="tf7" text="You complete me.☀️🌑" textAlign="Center" />
+
+            </VBox>
+        </content>
+
+    </Dialog>
+
+</core:FragmentDefinition>

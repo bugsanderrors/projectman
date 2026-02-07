@@ -1,0 +1,37 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="noPop"
+        showHeader="false"
+        contentWidth="300px"
+        contentHeight="400px">
+
+        <content>
+            <VBox id="vf2"
+                alignItems="Center"
+                justifyContent="Center"
+                class="sapUiMediumMargin">
+
+                <HBox id="hf2" justifyContent="End" alignItems="Start" width="100%">
+
+                    <Button id="bf2" icon="sap-icon://decline" type="Transparent" press="onCloseNo" />
+
+                </HBox>
+
+                <Image id="imgf2"
+                    src="../images/sad_cat.gif"
+                    width="250px"
+                    densityAware="false"
+                    alt="Loading animation"
+                    decorative="true" />
+
+                <Text id="tf2" text="Are you sure?🥹" />
+
+            </VBox>
+        </content>
+
+    </Dialog>
+
+</core:FragmentDefinition>

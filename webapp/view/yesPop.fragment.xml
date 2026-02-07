@@ -1,0 +1,37 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="yesPop"
+        showHeader="false"
+        contentWidth="300px"
+        contentHeight="400px">
+
+        <content>
+            <VBox id="vf1"
+                alignItems="Center"
+                justifyContent="Center"
+                class="sapUiMediumMargin">
+
+                <HBox id="hf1" justifyContent="End" alignItems="Start" width="100%">
+
+                    <Button id="bf1" icon="sap-icon://decline" type="Transparent" press="onCloseYes" />
+
+                </HBox>
+
+                <Image id="imgf1"
+                    src="../images/ily.gif"
+                    width="250px"
+                    densityAware="false"
+                    alt="Loading animation"
+                    decorative="true" />
+
+                <Text id="tf1" text="Happy Valentine's Day Manisha❤️" />
+
+            </VBox>
+        </content>
+
+    </Dialog>
+
+</core:FragmentDefinition>
