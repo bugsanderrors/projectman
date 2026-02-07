@@ -21,7 +21,7 @@
                 </HBox>
 
                 <Image id="imgf2"
-                    src="../images/sad_cat.gif"
+                    src="../images/dhamaal.gif"
                     width="250px"
                     densityAware="false"
                     alt="Loading animation"
