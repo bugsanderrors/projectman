@@ -20,7 +20,7 @@
                     densityAware="false"
                     alt="Loading animation"
                     decorative="true" 
-                    class="sapUiSmallMarginBottom"/>
+                    class="sapUiLargeMarginTop"/>
 
                 <Text id="tf5" text="I will choose to love you at every age, in every universe and every lifetime.💫" textAlign="Center" class="sapUiSmallMargin"/>
 

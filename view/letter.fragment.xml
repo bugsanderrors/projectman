@@ -1,0 +1,24 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="letter"
+        showHeader="false"
+        contentWidth="300px"
+        contentHeight="450px">
+
+        <content>
+            <VBox id="vfl1"
+                alignItems="Center"
+                justifyContent="Center"
+                class="sapUiMediumMargin">
+
+                <Text id="tfl1" text="" textAlign="Center" class="sapUiSmallMarginBottom"/>
+
+            </VBox>
+        </content>
+
+    </Dialog>
+
+</core:FragmentDefinition>

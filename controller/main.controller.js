@@ -14,7 +14,7 @@ sap.ui.define([
                 this._iIndex = (this._iIndex + 1) % this._aPages.length;
                 oCarousel.setActivePage(this._aPages[this._iIndex]);
 
-            }.bind(this), 2000); // rotate every 3 seconds
+            }.bind(this), 2000); // rotate every 2 seconds
 
         },
 
@@ -61,25 +61,6 @@ sap.ui.define([
                 this._openDialog("yesPop1");
             }
 
-            
-
-            /*var oView = this.getView();
-
-            if (!this._oDialog) {
-                this._oDialog = sap.ui.core.Fragment.load({
-                    id: oView.getId(),
-                    name: "manishant.projectman.view.yesPop",
-                    controller: this   //  THIS IS THE KEY
-                }).then(function (oDialog) {
-                    oView.addDependent(oDialog);
-                    return oDialog;
-                });
-            }
-
-            this._oDialog.then(function (oDialog) {
-                oDialog.open();
-            });*/
-
         },
 
         onYes1 : function () {
@@ -95,26 +76,10 @@ sap.ui.define([
                 .setProperty("/userChoice", "NO");
 
             this._openDialog("noPop");
-
-            /*var oView = this.getView();
-
-            if (!this._oDialog) {
-                this._oDialog = sap.ui.core.Fragment.load({
-                    id: oView.getId(),
-                    name: "manishant.projectman.view.noPop",
-                    controller: this   //  THIS IS THE KEY
-                }).then(function (oDialog) {
-                    oView.addDependent(oDialog);
-                    return oDialog;
-                });
-            }
-
-            this._oDialog.then(function (oDialog) {
-                oDialog.open();
-            });*/
         },
 
         onCloseYes : function () {
+            this._pauseAudio();
             this.byId("yesPop").close();
         },
 
@@ -127,16 +92,21 @@ sap.ui.define([
         onCloseYes1 : function () {
             this._pauseAudio();
             this.byId("yesPop1").close();
+            this._playAudio("until_I_found_you");
             this._openDialog("yesPop2");
         },
 
         onCloseYes2 : function () {
+            this._pauseAudio();
             this.byId("yesPop2").close();
+            this._playAudio("perfect");
             this._openDialog("yesPop3");
         },
 
         onCloseYes3 : function () {
+            this._pauseAudio();
             this.byId("yesPop3").close();
+            this._playAudio("tum_se_hi");
             this._openDialog("yesPop5");
         },
 
@@ -146,7 +116,9 @@ sap.ui.define([
         },
 
         onCloseYes5 : function () {
+            this._pauseAudio();
             this.byId("yesPop5").close();
+            this._playAudio("raataan_lambiyan");
             this._openDialog("yesPop");
         },
 
@@ -161,10 +133,10 @@ sap.ui.define([
 
         _playAudio : function(sSongName) {
             //if (!this._audio) {
-                this._audio = new Audio(
-                    sap.ui.require.toUrl("manishant/projectman/audio/" + sSongName + ".mp3")
-                );
-                this._audio.loop = true;
+            this._audio = new Audio(
+                sap.ui.require.toUrl("manishant/projectman/audio/" + sSongName + ".mp3")
+            );
+            this._audio.loop = true;
                 
             //}
             this._audio.play();
