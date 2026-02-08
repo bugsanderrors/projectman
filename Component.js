@@ -1,7 +1,8 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
-    "manishant/projectman/model/models"
-], (UIComponent, models) => {
+    "manishant/projectman/model/models",
+    "sap/ui/model/json/JSONModel"
+], (UIComponent, models, JSONModel) => {
     "use strict";
 
     return UIComponent.extend("manishant.projectman.Component", {
@@ -21,6 +22,13 @@ sap.ui.define([
 
             // enable routing
             this.getRouter().initialize();
+
+            // Global model
+            var oGlobalModel = new JSONModel({
+                userChoice: null
+            });
+
+            this.setModel(oGlobalModel, "global");
         }
     });
 });

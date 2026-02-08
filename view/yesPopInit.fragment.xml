@@ -1,0 +1,38 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="yesInitPop"
+        showHeader="false"
+        contentWidth="300px"
+        contentHeight="450px">
+
+        <content>
+            <VBox id="vfi1"
+                alignItems="Center"
+                justifyContent="Center"
+                class="sapUiMediumMargin">
+
+                <Image id="imgfi1"
+                    src="../images/yesInit.gif"
+                    width="250px"
+                    densityAware="false"
+                    alt="Loading animation"
+                    decorative="true" 
+                    class="sapUiSmallMargin"/>
+
+                <Text id="tfi1" text="I knew you would say yes!😎" textAlign="Center" class="sapUiMediumMarginBottom"/>
+
+                <HBox id="hfi1" justifyContent="Center" alignItems="Center" width="100%">
+
+                    <Button id="bfi1" icon="sap-icon://arrow-right" type="Transparent" press="onCloseInitYes" />
+
+                </HBox>
+
+            </VBox>
+        </content>
+
+    </Dialog>
+
+</core:FragmentDefinition>

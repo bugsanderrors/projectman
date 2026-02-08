@@ -1,18 +1,20 @@
 <core:FragmentDefinition
     xmlns="sap.m"
-    xmlns:core="sap.ui.core">
-
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org">
+    
     <Dialog
         id="yesPop1"
         showHeader="false"
         contentWidth="300px"
         contentHeight="450px">
-
+        
         <content>
+        
             <VBox id="vf3"
                 alignItems="Center"
                 justifyContent="Center"
-                class="sapUiLargeMarginTop">
+                class="sapUiLargeMarginTop">                
 
                 <Image id="imgf3"
                     src="../images/world.gif"

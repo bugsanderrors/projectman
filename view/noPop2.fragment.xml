@@ -14,22 +14,16 @@
                 justifyContent="Center"
                 class="sapUiMediumMargin">
 
-                <HBox id="hfn2" justifyContent="End" alignItems="Start" width="100%" class="sapUiMediumMarginBottom">
-
-                    <Button id="bfn2" icon="sap-icon://decline" type="Transparent" press="onCloseNo2" />
-
-                </HBox>
-
                 <Image id="imgfn2"
                     src="../images/agnes.gif"
                     width="250px"
                     densityAware="false"
                     alt="Loading animation"
                     decorative="true" 
-                    class="sapUiMediumMarginBottom"/>
+                    class="sapUiMediumMargin"/>
 
                 <Text id="tfn2" text="Are you double sure?😭" />
-                <Text id="tfn3" text="Please choose Yes!👉👈" />
+                <Text id="tfn3" text="Please choose Yes!👉👈" class="sapUiLargeMarginBottom"/>
 
                 <HBox id="hboxn3"
                         justifyContent="End"

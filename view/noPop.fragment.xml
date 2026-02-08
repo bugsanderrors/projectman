@@ -14,21 +14,15 @@
                 justifyContent="Center"
                 class="sapUiMediumMargin">
 
-                <HBox id="hf2" justifyContent="End" alignItems="Start" width="100%" class="sapUiMediumMarginBottom">
-
-                    <Button id="bf2" icon="sap-icon://decline" type="Transparent" press="onCloseNo" />
-
-                </HBox>
-
                 <Image id="imgf2"
                     src="../images/dhamaal.gif"
                     width="250px"
                     densityAware="false"
                     alt="Loading animation"
                     decorative="true" 
-                    class="sapUiMediumMarginBottom"/>
+                    class="sapUiMediumMargin"/>
 
-                <Text id="tf2" text="Are you sure?🥹" />
+                <Text id="tf2" text="Are you sure?🥹" class="sapUiLargeMarginBottom"/>
 
                 <HBox id="hbox3"
                         justifyContent="End"

@@ -16,8 +16,6 @@ sap.ui.define([
 
             }.bind(this), 2000); // rotate every 3 seconds
 
-
-
         },
 
         onExit: function () {
@@ -51,7 +49,19 @@ sap.ui.define([
 
         onYes: function () {
 
-            this._openDialog("yesPop1");
+            var sChoice = this.getOwnerComponent()
+                              .getModel("global")
+                              .getProperty("/userChoice");
+            
+            if (sChoice === "NO") {
+                this._openDialog("yesPopInit");
+            }
+            else {
+                this._playAudio("hey_ya");
+                this._openDialog("yesPop1");
+            }
+
+            
 
             /*var oView = this.getView();
 
@@ -74,10 +84,15 @@ sap.ui.define([
 
         onYes1 : function () {
             this.byId("noPop").close();
+            this._playAudio("make_you_mine");
             this._openDialog("noPop2");
         },
 
         onNo: function () {
+
+            this.getOwnerComponent()
+                .getModel("global")
+                .setProperty("/userChoice", "NO");
 
             this._openDialog("noPop");
 
@@ -103,7 +118,14 @@ sap.ui.define([
             this.byId("yesPop").close();
         },
 
+        onCloseInitYes : function () {
+            this.byId("yesInitPop").close();
+            this._playAudio("hey_ya");
+            this._openDialog("yesPop1");
+        },
+
         onCloseYes1 : function () {
+            this._pauseAudio();
             this.byId("yesPop1").close();
             this._openDialog("yesPop2");
         },
@@ -133,30 +155,27 @@ sap.ui.define([
         },
 
         onCloseNo2 : function () {
+            this._pauseAudio();
             this.byId("noPop2").close();
         },
 
-        onDialogAfterOpen: function () {
-            // Bind once, keep reference
-            this._fnOutsideClick = this._handleOutsideClick.bind(this);
-
-            // Delay ensures DOM is ready
-            setTimeout(() => {
-                document.addEventListener("click", this._fnOutsideClick, true);
-            }, 0);
+        _playAudio : function(sSongName) {
+            //if (!this._audio) {
+                this._audio = new Audio(
+                    sap.ui.require.toUrl("manishant/projectman/audio/" + sSongName + ".mp3")
+                );
+                this._audio.loop = true;
+                
+            //}
+            this._audio.play();
         },
 
-        onDialogAfterClose: function () {
-            document.removeEventListener("click", this._fnOutsideClick, true);
-        },
-
-        _handleOutsideClick: function (oEvent) {
-            const oDialogDom = this._oLoadingDialog.getDomRef();
-
-            // If dialog DOM exists and click is outside
-            if (oDialogDom && !oDialogDom.contains(oEvent.target)) {
-                this._oLoadingDialog.close();
+        _pauseAudio : function() {
+            if (this._audio) {
+                this._audio.pause();
+                this._audio.currentTime = 0;
             }
         }
+
     });
 });
