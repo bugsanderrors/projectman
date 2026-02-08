@@ -5,7 +5,7 @@
         <content>
         <VBox id="box1" width="100%" height="100%" justifyContent="Center" alignItems="Center">
 
-            <f:Card id="card1" width="700px" height="700px">
+            <f:Card id="card1" width="600px" height="700px">
                 <f:header>
                     
                 </f:header>
@@ -27,7 +27,7 @@
                             >
 
                             <Image id="car_img1"
-                                src="../images/image1.jpg"
+                                src="{= sap.ui.require.toUrl('manishant/projectman/images/image1.jpg') }"
                                 width="100%"
                                 densityAware="false" />
 
