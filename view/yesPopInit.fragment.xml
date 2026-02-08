@@ -15,7 +15,7 @@
                 class="sapUiMediumMargin">
 
                 <Image id="imgfi1"
-                    src="../images/yesInit.gif"
+                    src="/projectman/images/yesInit.gif"
                     width="250px"
                     densityAware="false"
                     alt="Loading animation"

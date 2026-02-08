@@ -15,7 +15,7 @@
                 class="sapUiSmallMargin">
 
                 <Image id="imgf6"
-                    src="../images/age.gif"
+                    src="/projectman/images/age.gif"
                     width="250px"
                     densityAware="false"
                     alt="Loading animation"

@@ -102,7 +102,7 @@ sap.ui.define([
 
         onCloseInitYes : function () {
             this.byId("yesInitPop").close();
-            //this._playAudio("hey_ya");
+            this._playAudio("dooron");
             this._openDialog("intro");
         },
 

@@ -15,7 +15,7 @@
                 class="sapUiLargeMarginTop">
 
                 <Image id="imgf7"
-                    src="../images/complete.gif"
+                    src="/projectman/images/complete.gif"
                     width="250px"
                     densityAware="false"
                     alt="Loading animation"

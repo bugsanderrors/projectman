@@ -32,27 +32,27 @@
                                 densityAware="false" />
 
                             <Image id="car_img2"
-                                src="../images/image2.png"
+                                src="/projectman/images/image2.png"
                                 width="100%"
                                 densityAware="false" />
 
                             <Image id="car_img3"
-                                src="../images/image3.png"
+                                src="/projectman/images/image3.png"
                                 width="100%"
                                 densityAware="false" />
                             
                             <Image id="car_img4"
-                                src="../images/image4.png"
+                                src="/projectman/images/image4.png"
                                 width="100%"
                                 densityAware="false" />
 
                             <Image id="car_img5"
-                                src="../images/image5.png"
+                                src="/projectman/images/image5.png"
                                 width="100%"
                                 densityAware="false" />
 
                             <Image id="car_img6"
-                                src="../images/image6.png"
+                                src="/projectman/images/image6.png"
                                 width="100%"
                                 densityAware="false" />
 
