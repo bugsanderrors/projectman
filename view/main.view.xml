@@ -14,7 +14,8 @@
                     <VBox id="box2" class="sapUiSmallMargin" width="100%" height="100%" alignItems="Center">
 
                         <VBox id="text_box" class="sapUiSmallMargin" height="6rem" width="auto" alignItems="Center">
-                            <Text id="t1" text="Will you be my Valentine?"  textAlign="Center" class="myStyle"/>
+                            <Text id="t1" text="Will you be my"  textAlign="Center" class="myStyle"/>
+                            <Text id="t2" text="Valentine?"  textAlign="Center" class="myStyle"/>
                         </VBox>
 
                         <Carousel
