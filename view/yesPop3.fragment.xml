@@ -5,8 +5,8 @@
     <Dialog
         id="yesPop3"
         showHeader="false"
-        contentWidth="300px"
-        contentHeight="450px">
+        contentWidth="19rem"
+        contentHeight="28rem">
 
         <content>
             <VBox id="vf5"
@@ -16,7 +16,7 @@
 
                 <Image id="imgf5"
                     src="/projectman/images/age.gif"
-                    width="250px"
+                    width="16rem"
                     densityAware="false"
                     alt="Loading animation"
                     decorative="true" 

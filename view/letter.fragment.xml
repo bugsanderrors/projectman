@@ -5,8 +5,8 @@
     <Dialog
         id="letter"
         showHeader="false"
-        contentWidth="400px"
-        contentHeight="500px">
+        contentWidth="25rem"
+        contentHeight="32rem">
 
         <content>
             <VBox id="vfl1"

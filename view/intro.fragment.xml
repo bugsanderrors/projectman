@@ -5,8 +5,8 @@
     <Dialog
         id="intro"
         showHeader="false"
-        contentWidth="300px"
-        contentHeight="450px">
+        contentWidth="19rem"
+        contentHeight="28rem">
 
         <content>
             <VBox id="vif1"
@@ -17,8 +17,8 @@
                 <!--HBox id="hif1" justifyContent="Center" alignItems="Center" width="100%" height="100px"/-->
 
                 <Image id="imgif1"
-                    src="../images/like.gif"
-                    width="125px"
+                    src="/projectman/images/like.gif"
+                    width="8rem"
                     densityAware="false"
                     alt="Loading animation"
                     decorative="true" 

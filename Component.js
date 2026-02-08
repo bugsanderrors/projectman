@@ -17,6 +17,13 @@ sap.ui.define([
             // call the base component's init function
             UIComponent.prototype.init.apply(this, arguments);
 
+            if (sap.ui.Device.system.phone) {
+                document.body.classList.remove("sapUiSizeCompact");
+                document.body.classList.add("sapUiSizeCozy");
+            } else {
+                document.body.classList.add("sapUiSizeCompact");
+            }
+
             // set the device model
             this.setModel(models.createDeviceModel(), "device");
 

@@ -5,9 +5,8 @@
     <Dialog
         id="yesPop2"
         showHeader="false"
-        contentWidth="300px"
-        contentHeight="450px"
-        >
+        contentWidth="19rem"
+        contentHeight="28rem">
 
         <content>
             <VBox id="vf4"
@@ -17,7 +16,7 @@
 
                 <Image id="imgf4"
                     src="/projectman/images/home.gif"
-                    width="250px"
+                    width="16rem"
                     densityAware="false"
                     alt="Loading animation"
                     decorative="true" 

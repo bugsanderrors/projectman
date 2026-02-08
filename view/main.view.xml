@@ -12,16 +12,15 @@
 
                 <f:content>
                     <VBox id="box2" class="sapUiSmallMargin" width="100%" height="100%" alignItems="Center">
-                        <Text id="t1" text="Will you be my Valentine?"  textAlign="Center" class="myStyle"/>
 
-                        <VBox id="blank_box" height="2rem" />
-
-                        <VBox id="blank_box2" height="2rem" />
+                        <VBox id="text_box" class="sapUiSmallMargin" height="6rem" width="auto" alignItems="Center">
+                            <Text id="t1" text="Will you be my Valentine?"  textAlign="Center" class="myStyle"/>
+                        </VBox>
 
                         <Carousel
                             id="imageCarousel"
-                            height="400px"
-                            width="400px"
+                            height="25rem"
+                            width="25rem"
                             loop="true"
                             showPageIndicator="true"
                             >
