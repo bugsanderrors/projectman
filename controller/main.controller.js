@@ -81,6 +81,7 @@ sap.ui.define([
         onCloseYes : function () {
             this._pauseAudio();
             this.byId("yesPop").close();
+            this._openDialog("letter");
         },
 
         onCloseInitYes : function () {
@@ -129,6 +130,10 @@ sap.ui.define([
         onCloseNo2 : function () {
             this._pauseAudio();
             this.byId("noPop2").close();
+        },
+
+        onCloseLetter : function () {
+            this.byId("letter").close();
         },
 
         _playAudio : function(sSongName) {

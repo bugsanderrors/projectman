@@ -14,7 +14,16 @@
                 justifyContent="Center"
                 class="sapUiMediumMargin">
 
-                <Text id="tfl1" text="" textAlign="Center" class="sapUiSmallMarginBottom"/>
+                <HBox id="hfl1" justifyContent="End" alignItems="Start" width="100%">
+
+                    <Button id="bfl1" icon="sap-icon://decline" type="Transparent" press="onCloseLetter" />
+
+                </HBox>
+
+                <Text id="tfl1" text="Hey Manisha, I know thoda sa over ho gya, but wanted to do something special for you. I know we are taking it slowly and steadily, and ofcourse I know you are not sure of us now and maybe you choose to be not together later (which I wish never happen). So I wanted to express my love while I can and will continue to do so if everything turns right. People say love is not enough to sustain a relationship that there are certain other things, which I agree to...there should be some compatability between two people, but I also believe love is a major part of it and if two person gave their one hundred percent, everything is possible. I am all 100% for you, can't even tell you how much you mean being here in my life. I want to be with you till the very end, in both happy and sad phases of life, to take care of each other. I know sirf bolne mein acchi lagti hai ye sab baatein but I will make sure you feel safe, loved and at home." textAlign="Begin" class="sapUiSmallMarginBottom"/>
+                <Text id="tfl2" text="Everyone was waiting for 14th Feb, I am still waiting for 28th Feb, can't wait to see you and how badly I want to talk to you, everyday I think of calling you but I don't want technology to ruin the moment when I hear your voice after so long." textAlign="Begin" class="sapUiSmallMarginBottom"/>
+                <Text id="tfl3" text="sorry for stealing your photos from Instagram...had only one photo of you..hehe😁" textAlign="Begin" class="sapUiSmallMarginBottom"/>
+
 
             </VBox>
         </content>

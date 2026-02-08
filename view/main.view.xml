@@ -23,7 +23,8 @@
                             height="400px"
                             width="400px"
                             loop="true"
-                            showPageIndicator="true">
+                            showPageIndicator="true"
+                            >
 
                             <Image id="car_img1"
                                 src="../images/image1.jpg"
