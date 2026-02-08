@@ -26,6 +26,7 @@ sap.ui.define([
 
         _openDialog: function (sFragmentName) {
             var oView = this.getView();
+            var that = this;
 
             if (!this._mDialogs) {
                 this._mDialogs = {};
@@ -42,7 +43,7 @@ sap.ui.define([
                 });
             }
 
-            this._mDialogs[sFragmentName].then(function (oDialog) {
+            this._mDialogs[sFragmentName].then(function (oDialog) {                
                 oDialog.open();
             });
         },
@@ -57,8 +58,10 @@ sap.ui.define([
                 this._openDialog("yesPopInit");
             }
             else {
-                this._playAudio("hey_ya");
-                this._openDialog("yesPop1");
+                //this._playAudio("hey_ya");
+                this._playAudio("dooron");
+                this._openDialog("intro");
+                //this.createFloatingHearts();
             }
 
         },
@@ -81,13 +84,26 @@ sap.ui.define([
         onCloseYes : function () {
             this._pauseAudio();
             this.byId("yesPop").close();
+            this._playAudio("all_I_can_say");
             this._openDialog("letter");
+        },
+
+        onCloseIntro : function () {
+            this._pauseAudio();
+            if (this._heartInterval) {
+                clearInterval(this._heartInterval);
+                this._heartInterval = null;
+            }
+
+            this.byId("intro").close();
+            this._playAudio("hey_ya");
+            this._openDialog("yesPop1");
         },
 
         onCloseInitYes : function () {
             this.byId("yesInitPop").close();
-            this._playAudio("hey_ya");
-            this._openDialog("yesPop1");
+            //this._playAudio("hey_ya");
+            this._openDialog("intro");
         },
 
         onCloseYes1 : function () {
@@ -133,6 +149,7 @@ sap.ui.define([
         },
 
         onCloseLetter : function () {
+            this._pauseAudio();
             this.byId("letter").close();
         },
 
@@ -153,6 +170,7 @@ sap.ui.define([
                 this._audio.currentTime = 0;
             }
         }
+
 
     });
 });

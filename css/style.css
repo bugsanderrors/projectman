@@ -41,3 +41,55 @@
     background-color: #ff0000 !important;
 }
 
+.heartContainer {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  bottom: -20px;
+  opacity: 0;
+  animation: floatUp 4s ease-in forwards;
+  filter: drop-shadow(0 0 6px rgba(255, 80, 120, 0.5));
+  pointer-events: none;
+}
+
+
+/* two lobes */
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -8px;
+  left: 0;
+}
+
+.heart::after {
+  left: 8px;
+  top: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-260px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+
