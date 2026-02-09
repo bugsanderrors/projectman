@@ -26,7 +26,7 @@
 
                 <Text id="tif1" text="Don't share your feelings, they say it pushes people away!" textAlign="Center" class="sapUiSmallMarginBottom"/>
                 <Text id="tif2" text="But what's the point of having a heart if it must stay silent?" textAlign="Center" class="sapUiSmallMarginBottom"/>
-                <Text id="tif3" text="Someone, somewhere will hold it gentlly, I hope it's you." textAlign="Center" class="sapUiSmallMarginBottom"/>
+                <Text id="tif3" text="Someone, somewhere will hold it gently, I hope it's you." textAlign="Center" class="sapUiSmallMarginBottom"/>
 
                 <HBox id="hif2" justifyContent="Center" alignItems="Center" width="100%">
 
