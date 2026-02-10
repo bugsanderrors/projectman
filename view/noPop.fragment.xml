@@ -33,13 +33,6 @@
                         
                         press="onYes1" />
 
-                    <HBox id="hbox4" width="1rem" />
-
-                    <Button id="try_again"
-                        text="Try Again!"
-                        
-                        press="onCloseNo" />
-
                 </HBox>
 
             </VBox>
